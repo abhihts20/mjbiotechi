@@ -44,28 +44,33 @@ a{
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
 }
-.carousel-caption{
-    top:100px;
-    bottom: auto;
+@media screen and (min-width: 992px) {
+    .carousel-caption{
+        top:100px;
+        bottom: auto;
+        text-align: start;
+    }
 }
 
 .carousel-caption .carousel-text{
     margin: 2px;
-
 }
 
 .carousel-item img{
     opacity: 0.5!important;
 }
 
-.carousel-text-head p{
-    font-size:1.5rem;
+.carousel-text-head{
+    font-size: 1.5rem!important;
+    color: #fff;
+    font-weight: bolder!important;
 }
 
-.slideInWrapper {
-    /*overflow: hidden;*/
+.carousel-text-org{
+    font-size: 4rem!important;
 }
 
+/******************** Animations *********************************/
 .slideIn{
     position: absolute;
     left: -1000px;
@@ -92,3 +97,55 @@ a{
     100% { left: 0; }
 }
 
+.zoomOutAnimation{
+    animation: zoomOut 4s linear forwards;
+}
+
+@keyframes zoomOut {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+
+.underline {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+}
+
+.underline:after {
+    position: absolute;
+    content: '';
+    bottom: -2px;
+    left: 0px;
+    height: 2px;
+    width: 0%;
+    background-color: #fff;
+    -webkit-animation: underline 2s ease-in-out 2s forwards;
+    animation: underline 2s ease-in-out 2s forwards; /* remove infinite if you want only once */
+}
+@keyframes underline {
+    to {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .carousel-caption{
+        top:90px;
+        bottom: auto;
+    }
+    .carousel-text-org{
+        margin-top: 20px;
+        font-size: 2rem!important;
+        font-weight: bolder;
+    }
+}

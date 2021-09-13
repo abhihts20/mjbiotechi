@@ -44,9 +44,13 @@
     color: #000!important;
 }
 
-#nav-ul-contact-btn,#nav-contact-btn{
+.nav-btn{
     background: #EDDD5E!important;
     font-weight: bolder;
+}
+
+.nav-btn:is(#nav-career-btn){
+    margin-left: 10px!important;
 }
 
 @media all and (min-width: 992px) {
@@ -94,19 +98,21 @@ nav ul li > a:hover:after{
 }
 
 @media screen and (max-width: 992px) {
-    #nav-contact-btn{
+    #nav-contact-btn,#nav-career-btn{
         display: none;
     }
-    #nav-ul-contact-btn{
+    #nav-ul-contact-btn,#nav-ul-career-btn{
         visibility: visible;
     }
     #nav-header-banner{
         display: none;
     }
+
+
 }
 
 @media screen and (min-width:992px){
-    #nav-ul-contact-btn{
+    #nav-ul-contact-btn,#nav-ul-career-btn{
         display: none;
     }
 }
