@@ -1,0 +1,94 @@
+/*yellow: #EDDD5E*/
+
+
+body,html{
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    /*padding-top:20px;*/
+}
+
+
+.carousel .carousel-item img{
+    height:93vh;
+}
+
+a{
+    text-decoration:none!important;
+    color:inherit!important;
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+.carousel-caption{
+    top:100px;
+    bottom: auto;
+}
+
+.carousel-caption .carousel-text{
+    margin: 2px;
+
+}
+
+.carousel-item img{
+    opacity: 0.5!important;
+}
+
+.carousel-text-head p{
+    font-size:1.5rem;
+}
+
+.slideInWrapper {
+    /*overflow: hidden;*/
+}
+
+.slideIn{
+    position: absolute;
+    left: -1000px;
+    -webkit-animation: slide 1s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+}
+
+.slideUp{
+    position: absolute;
+    left: -1000px;
+    -webkit-animation: slide 1s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
