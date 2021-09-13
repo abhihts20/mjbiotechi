@@ -1,6 +1,4 @@
 /*yellow: #EDDD5E*/
-
-
 body,html{
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
@@ -8,6 +6,26 @@ body,html{
     /*padding-top:20px;*/
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #4DB748;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: green;
+}
 
 .carousel .carousel-item img{
     height:93vh;
@@ -136,7 +154,6 @@ a{
         width: 100%;
     }
 }
-
 
 @media screen and (max-width: 992px) {
     .carousel-caption{

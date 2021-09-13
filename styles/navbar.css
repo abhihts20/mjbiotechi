@@ -42,6 +42,7 @@
 .nav-item a{
     /*font-weight: bold;*/
     color: #000!important;
+    padding: 10px 20px!important;
 }
 
 .nav-btn{
@@ -61,6 +62,7 @@
     /*.navbar .dropdown-menu .dropdown-item { color:black; }*/
     .navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);border-radius: 10px }
 }
+
 nav ul li:not(.dropdown) > a:after{
     content: '';
     display: block;
@@ -98,6 +100,12 @@ nav ul li > a:hover:after{
 }
 
 @media screen and (max-width: 992px) {
+    .nav-item a{
+        /*font-weight: bold;*/
+        text-align: center;
+        color: #000!important;
+        padding: 10px 20px!important;
+    }
     #nav-contact-btn,#nav-career-btn{
         display: none;
     }
