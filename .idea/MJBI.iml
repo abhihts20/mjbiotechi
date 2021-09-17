@@ -15,5 +15,6 @@
     <orderEntry type="library" name="mdb-ui-kit" level="application" />
     <orderEntry type="library" name="jquery-3.6.0" level="application" />
     <orderEntry type="library" name="aos" level="application" />
+    <orderEntry type="library" name="animate.css" level="application" />
   </component>
 </module>

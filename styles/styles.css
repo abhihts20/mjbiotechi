@@ -1,5 +1,5 @@
 /*yellow: #EDDD5E*/
-body,html{
+body, html {
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -10,6 +10,7 @@ body,html{
 ::-webkit-scrollbar {
     width: 15px;
 }
+
 /* Track */
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey;
@@ -27,13 +28,13 @@ body,html{
     background: green;
 }
 
-.carousel .carousel-item img{
-    height:93vh;
+.carousel .carousel-item img {
+    height: 93vh;
 }
 
-a{
-    text-decoration:none!important;
-    color:inherit!important;
+a {
+    text-decoration: none !important;
+    color: inherit !important;
 }
 
 @-webkit-keyframes fadeInDown {
@@ -62,34 +63,35 @@ a{
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
 }
+
 @media screen and (min-width: 992px) {
-    .carousel-caption{
-        top:100px;
+    .carousel-caption {
+        top: 100px;
         bottom: auto;
         text-align: start;
     }
 }
 
-.carousel-caption .carousel-text{
+.carousel-caption .carousel-text {
     margin: 2px;
 }
 
-.carousel-item img{
-    opacity: 0.5!important;
+.carousel-item img {
+    opacity: 0.5 !important;
 }
 
-.carousel-text-head{
-    font-size: 1.5rem!important;
+.carousel-text-head {
+    font-size: 1.5rem !important;
     color: #fff;
-    font-weight: bolder!important;
+    font-weight: bolder !important;
 }
 
-.carousel-text-org{
-    font-size: 4rem!important;
+.carousel-text-org {
+    font-size: 4rem !important;
 }
 
 /******************** Animations *********************************/
-.slideIn{
+.slideIn {
     position: absolute;
     left: -1000px;
     -webkit-animation: slide 1s forwards;
@@ -98,7 +100,7 @@ a{
     animation-delay: 2s;
 }
 
-.slideUp{
+.slideUp {
     position: absolute;
     left: -1000px;
     -webkit-animation: slide 1s forwards;
@@ -108,25 +110,29 @@ a{
 }
 
 @-webkit-keyframes slide {
-    100% { left: 0; }
+    100% {
+        left: 0;
+    }
 }
 
 @keyframes slide {
-    100% { left: 0; }
+    100% {
+        left: 0;
+    }
 }
 
-.zoomOutAnimation{
+.zoomOutAnimation {
     animation: zoomOut 4s linear forwards;
 }
 
 @keyframes zoomOut {
-    0%{
+    0% {
         transform: scale(1);
     }
-    50%{
+    50% {
         transform: scale(1.2);
     }
-    100%{
+    100% {
         transform: scale(1.2);
     }
 }
@@ -149,20 +155,99 @@ a{
     -webkit-animation: underline 2s ease-in-out 2s forwards;
     animation: underline 2s ease-in-out 2s forwards; /* remove infinite if you want only once */
 }
+
 @keyframes underline {
     to {
         width: 100%;
     }
 }
 
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.mjbi-intro-image1 {
+    border-radius: 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+    /*border: 1px red solid;*/
+}
+
+.mjbi-intro-image2 {
+    border-radius: 10px;
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    /*border: 1px green solid;*/
+}
+
+.main-header-div{
+    background: #4DB748;
+    padding: 3rem;
+    z-index: 999;
+    left: 40px;
+    top: 20px;
+    border-radius: 1rem;
+}
+
 @media screen and (max-width: 992px) {
-    .carousel-caption{
-        top:90px;
+    .carousel-caption {
+        top: 90px;
         bottom: auto;
     }
-    .carousel-text-org{
+
+    .carousel-text-org {
         margin-top: 20px;
-        font-size: 2rem!important;
+        font-size: 2rem !important;
         font-weight: bolder;
     }
+
+    .mjbi-intro-image1 {
+        height: 7rem;
+        width: 15rem;
+        /*border: 1px red solid;*/
+    }
+
+    .mjbi-intro-image2 {
+        width: 10rem;
+        height: 6rem;
+    }
+
+
+
+}
+
+
+
+@media screen and (min-width: 992px) {
+    .mjbi-intro-image1 {
+        height: 25rem;
+        width: 25rem;
+    }
+
+    .mjbi-intro-image2 {
+        width: 20rem;
+        height: 15rem;
+    }
+}
+
+
+.mjbi-image-1 {
+    width: 500px;
+    height: 500px;
+    border-radius: 1rem;
+}
+
+.mjbi-main-block-1 {
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.mjbi-main-header-text {
+    color: #334B35;
+    font-size: 3rem;
 }
