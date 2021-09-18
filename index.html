@@ -21,13 +21,12 @@
     <!--            rel="stylesheet"-->
     <!--            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"-->
     <!--    />-->
-    <script>
-        document.getElementById('header').innerHTML='<object type="text/html" data="components/header.html" ></object>';
-    </script>
+
     <script type="text/javascript" src="javascript/componentLoader.js"></script>
 </head>
 <body>
 <div id="header"></div>
+
 <section>
     <div id="carouselExampleIndicators" class="carousel slide" data-mdb-ride="carousel">
         <div class="carousel-indicators">
@@ -146,6 +145,11 @@
         </div>
     </div>
 </section>
+<script>
+    console.log(document.getElementById('header'))
+    $('#header').load('components/header.html')
+    // document.getElementById('header').innerHTML='<object type="text/html" data="components/header.html" ></object>';
+</script>
 <script src="javascript/increaseCountAnimation.js">
 
 </script>
