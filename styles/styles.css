@@ -1,6 +1,6 @@
 /*yellow: #EDDD5E*/
 body, html {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     scroll-behavior: smooth;
     overflow-x: hidden;
     /*padding-top:20px;*/
@@ -77,7 +77,7 @@ a {
 }
 
 .carousel-item img {
-    opacity: 0.5 !important;
+    opacity: 0.9 !important;
 }
 
 .carousel-text-head {
@@ -87,7 +87,9 @@ a {
 }
 
 .carousel-text-org {
-    font-size: 4rem !important;
+    font-size: 6rem !important;
+    font-family: 'Shadows Into Light', cursive!important;
+    font-weight: bolder!important;
 }
 
 /******************** Animations *********************************/
@@ -186,7 +188,8 @@ a {
 
 .main-header-div{
     background: #4DB748;
-    padding: 3rem;
+    width: 79%;
+    padding: 1.5rem;
     z-index: 999;
     left: 40px;
     top: 20px;
@@ -215,11 +218,7 @@ a {
         width: 10rem;
         height: 6rem;
     }
-
-
-
 }
-
 
 
 @media screen and (min-width: 992px) {
@@ -248,6 +247,20 @@ a {
 }
 
 .mjbi-main-header-text {
+    font-family: 'Averia Serif Libre', cursive!important;
     color: #334B35;
+    font-weight: bolder;
     font-size: 3rem;
+}
+
+.mjbi-main-header-text1{
+    font-family: 'Averia Serif Libre', cursive!important;
+    color: #6D8C54;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.mjbi-main-header-text2{
+    /*color: #6D8C54;*/
+    font-weight: bold;
+    font-size: 1.2rem;
 }
